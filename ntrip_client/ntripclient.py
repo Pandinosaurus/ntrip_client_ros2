@@ -99,9 +99,14 @@ class ntripconnect(Thread):
         self.stop = False
 
     def run(self):
-        
-        response = self.send_gga_message()
-        
+                
+        response = False 
+                
+        try:
+            response = self.send_gga_message()
+        except Exception as e:
+            self.ntc.log("Exception: " + str(e.__class__) + " occurred.")
+
         while not response:
             time.sleep(10)
             self.send_gga_message()

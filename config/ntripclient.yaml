@@ -1,7 +1,7 @@
 /ntripclient:
   ros__parameters:
-    password: 'mypassword'
-    server: 'ntripserver.com:7801'
-    stream: 'mystream'
+    password: '67308'
+    server: at.nrtk.eu:7801
+    stream: VRS_LGS_M31
     use_sim_time: false
-    user: 'myuser'
+    user: '15253382'
